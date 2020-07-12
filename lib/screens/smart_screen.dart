@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rtm/bloc/navigation_bloc.dart';
 
-class SmartScreen extends StatefulWidget with NavigationStates{
+class SmartScreen extends StatefulWidget{
   @override
   _SmartScreenState createState() => _SmartScreenState();
 }
@@ -9,6 +8,11 @@ class SmartScreen extends StatefulWidget with NavigationStates{
 class _SmartScreenState extends State<SmartScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Align(
+        alignment: Alignment.center,
+        child: Text('Smart Screen'),
+      ),
+    );
   }
 }

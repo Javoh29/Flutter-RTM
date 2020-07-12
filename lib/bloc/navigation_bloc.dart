@@ -1,42 +1,23 @@
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_rtm/screens/album_screen.dart';
-import 'package:flutter_rtm/screens/directions_screen.dart';
-import 'package:flutter_rtm/screens/home_screen.dart';
-import 'package:flutter_rtm/screens/smart_screen.dart';
 
-enum NavigationEvents {
-  HomeClickedEvent,
-  DirectionsClickedEvent,
-  AlbumClickedEvent,
-  SmartClickedEvent
-}
+import 'navigation_event.dart';
+import 'navigation_state.dart';
 
-abstract class NavigationStates {}
-
-class NavigationBloc extends Bloc<NavigationEvents, NavigationStates>{
-
-  NavigationBloc();
+class NavigationBloc extends Bloc<NavigationEvent, NavigationState>{
+  @override
+  NavigationState get initialState => HomePage();
 
   @override
-  NavigationStates get initialState => HomeScreen();
-
-  @override
-  Stream<NavigationStates> mapEventToState(NavigationEvents event) async* {
-    switch(event){
-      case NavigationEvents.HomeClickedEvent:
-        yield HomeScreen();
-        break;
-      case NavigationEvents.DirectionsClickedEvent:
-        yield DirectionsScreen();
-        break;
-      case NavigationEvents.AlbumClickedEvent:
-        yield AlbumScreen();
-        break;
-      case NavigationEvents.SmartClickedEvent:
-        yield SmartScreen();
-        break;
+  Stream<NavigationState> mapEventToState(event) async* {
+    if (event is AppStarted || event is HomeClickedEvent) {
+      yield HomePage();
+    } else if (event is DirectionsClickedEvent) {
+      yield DirectionsPage();
+    } else if (event is AlbumClickedEvent) {
+      yield AlbumPage();
+    } else if (event is SmartClickedEvent) {
+      yield SmartPage();
     }
   }
-
 }
