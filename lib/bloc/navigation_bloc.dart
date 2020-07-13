@@ -18,6 +18,8 @@ class NavigationBloc extends Bloc<NavigationEvent, NavigationState>{
       yield AlbumPage();
     } else if (event is SmartClickedEvent) {
       yield SmartPage();
+    } else if (event is ResidentsClickedEvent) {
+      yield ResidentsPage();
     }
   }
 }

@@ -13,3 +13,5 @@ class DirectionsPage extends NavigationState {}
 class AlbumPage extends NavigationState {}
 
 class SmartPage extends NavigationState {}
+
+class ResidentsPage extends NavigationState {}

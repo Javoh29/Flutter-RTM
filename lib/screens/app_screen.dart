@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rtm/bloc/navigation_bloc.dart';
 import 'package:flutter_rtm/bloc/navigation_event.dart';
 import 'package:flutter_rtm/bloc/navigation_state.dart';
+import 'package:flutter_rtm/screens/residents_screen.dart';
 import 'package:flutter_rtm/screens/smart_screen.dart';
 
 import 'album_screen.dart';
@@ -44,6 +45,8 @@ class _AppScreenState extends State<AppScreen> {
                     return AlbumScreen();
                   } else if (state is SmartPage) {
                     return SmartScreen();
+                  } else if (state is ResidentsPage) {
+                    return ResidentsScreen();
                   } else {
                     return Scaffold(
                       body: CircularProgressIndicator(),

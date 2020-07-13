@@ -10,3 +10,4 @@ class HomeClickedEvent extends NavigationEvent {}
 class DirectionsClickedEvent extends NavigationEvent {}
 class AlbumClickedEvent extends NavigationEvent {}
 class SmartClickedEvent extends NavigationEvent {}
+class ResidentsClickedEvent extends NavigationEvent {}
