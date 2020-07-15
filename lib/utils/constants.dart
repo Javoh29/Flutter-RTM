@@ -1,5 +1,3 @@
-import 'dart:collection';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_rtm/models/album_model.dart';
 import 'package:flutter_rtm/models/direction_model.dart';
@@ -62,6 +60,26 @@ List<DirectionModel> directionModel = [
   DirectionModel(
       'images/one_million_coders.png',
       'Bir million uzbek coders'
+  ),
+  DirectionModel(
+      'images/start_up.png',
+      ''
+  ),
+  DirectionModel(
+      'images/avtomatika.png',
+      'Avtomatika'
+  ),
+  DirectionModel(
+      'images/cybersport.png',
+      'Cybersport'
+  ),
+  DirectionModel(
+      'images/arxitektura.png',
+      'Arxitektura va dizayn'
+  ),
+  DirectionModel(
+      'images/video_studio.png',
+      'Video studiya'
   ),
 ];
 
