@@ -40,21 +40,14 @@ class _ResidentsScreenState extends State<ResidentsScreen> {
                   width: 100,
                   decoration: BoxDecoration(
                     color: Theme.of(context).primaryColor,
-                    borderRadius: BorderRadius.circular(50),
-                    boxShadow: [
-                      BoxShadow(
-                        offset: Offset(0, 0),
-                        color: Colors.black26,
-                        blurRadius: 15
-                      )
-                    ]
+                    borderRadius: BorderRadius.circular(50)
                   ),
                 ),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(50),
                   child: Image(
                     image: AssetImage(resident[selectIndex][index].image),
-                    height: 96,
+                    height: 94,
                     fit: BoxFit.cover,
                   ),
                 )

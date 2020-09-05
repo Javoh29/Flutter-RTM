@@ -54,10 +54,6 @@ List<DirectionModel> directionModel = [
       'Robotech'
   ),
   DirectionModel(
-      'images/english.png',
-      'Ingliz tili'
-  ),
-  DirectionModel(
       'images/one_million_coders.png',
       'Bir million uzbek coders'
   ),
@@ -66,21 +62,9 @@ List<DirectionModel> directionModel = [
       ''
   ),
   DirectionModel(
-      'images/avtomatika.png',
-      'Avtomatika'
-  ),
-  DirectionModel(
-      'images/cybersport.png',
-      'Cybersport'
-  ),
-  DirectionModel(
-      'images/arxitektura.png',
-      'Arxitektura va dizayn'
-  ),
-  DirectionModel(
-      'images/video_studio.png',
-      'Video studiya'
-  ),
+      'images/imsoft.png',
+      'imsoft'
+  )
 ];
 
 List<AlbumModel> albumModel = [
@@ -235,6 +219,12 @@ List<ResidentModel> web = [
       direction: 'Web dasturchi',
       name: 'Yusufjonov Abdurahmon Yunusjon o‘g‘li',
       telNum: '97-209-13 09'
+  ),
+  ResidentModel(
+      image: 'images/res_10.jpg',
+      direction: 'Web dasturchi',
+      name: 'Inomjonov Javohir Zokirjon o’g’li',
+      telNum: '97-210-55-25'
   )
 ];
 
@@ -246,11 +236,29 @@ List<ResidentModel> designer = [
       telNum: '99-997-12-10'
   ),
   ResidentModel(
+      image: 'images/res_18.jpg',
+      direction: 'Grafik dizayner',
+      name: 'Jakhongir Sagatov',
+      telNum: '90-160-80-90'
+  ),
+  ResidentModel(
+      image: 'images/res_15.jpg',
+      direction: 'Dizayner',
+      name: 'Abdulaziziov Fayzullo Hakimjon o’g’li',
+      telNum: '99-996-16-96'
+  ),
+  ResidentModel(
+      image: 'images/res_13.jpg',
+      direction: 'Dizayner',
+      name: 'Mo’minov Abdusamad Bannobjon o’g’li',
+      telNum: '90-357-85-73'
+  ),
+  ResidentModel(
       image: 'images/res_8.jpg',
       direction: 'Web dizayner',
       name: 'O‘rinboyev Dilshodjon Ravshanjon o‘g‘li',
       telNum: '90-272-95-92'
-  )
+  ),
 ];
 
 List<ResidentModel> oneCoder = [
@@ -259,14 +267,66 @@ List<ResidentModel> oneCoder = [
       direction: 'Android dasturchi',
       name: 'Boltaboyev Ilxomjon Dadajon o‘g‘li',
       telNum: '90-163-41-22'
+  ),
+  ResidentModel(
+      image: 'images/res_14.jpg',
+      direction: 'O’quvchi',
+      name: 'Yuldashev Said Azimxon Abdua’zamxon o’g’li',
+      telNum: '91-658-87-76'
   )
+];
+
+List<ResidentModel> startUp = [
+  ResidentModel(
+      image: 'images/res_16.jpg',
+      direction: 'Start up',
+      name: 'Madg’oziyev Temurmalik Sherzod o’g’li',
+      telNum: '94-445-65-05'
+  )
+];
+
+List<ResidentModel> robotech = [
+  ResidentModel(
+      image: 'images/res_11.jpg',
+      direction: 'Robototexnik',
+      name: 'Tursunaliyev Murodiljon Adaxamjon o’g’li',
+      telNum: '91-655-77-05'
+  )
+];
+
+List<ResidentModel> imsoft = [
+  ResidentModel(
+      image: 'images/res_17.jpg',
+      direction: 'C# Dasturchi',
+      name: 'Ahmadjonov Ibrohimjon Ilhomjon o’g’li',
+      telNum: '93-974-05-50'
+  ),
+  ResidentModel(
+      image: 'images/res_18.jpg',
+      direction: 'Grafik dizayner',
+      name: 'Jakhongir Sagatov',
+      telNum: '90-160-80-90'
+  ),
+  ResidentModel(
+      image: 'images/res_19.jpg',
+      direction: 'Android dasturchi',
+      name: 'Asraqulov Ilxomjon',
+      telNum: '90-111-88-28'
+  ),
+  ResidentModel(
+      image: 'images/res_4.jpg',
+      direction: 'Android dasturchi',
+      name: 'Ergashev Javohir Inomjon o‘g‘li',
+      telNum: '99-362-29-10'
+  ),
 ];
 
 Map<int, List<ResidentModel>> resident = {
   0: mobile,
   1: web,
   2: designer,
-  3: designer,
-  4: designer,
-  5: oneCoder
+  3: robotech,
+  4: oneCoder,
+  5: startUp,
+  6: imsoft
 };
